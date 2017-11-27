@@ -1,4 +1,6 @@
-
+function preload() {
+  data = loadJSON("text.json");
+}
 var slider ={
   y: 1125,
   y2:1750
@@ -43,12 +45,11 @@ function draw() {
   forNN();
   info();
   animate();
-  fill(200,80,200);
 thingy();
 }
 function thingy(){
   noStroke();
-  fill(200,80,200);
+  fill(100, 255, 200);
   ellipse(mouseX, mouseY, 50, 50);
   stroke(1)
   fill(0,0,0);
@@ -116,31 +117,41 @@ function forNN(){
   if (val == 2) {
     textSize(40)
     fill(0,0,0)
-    text("Laws", 100, 600)
-inside(nn.text[1].lines[1],nn.text[1].lines[2],nn.text[1].lines[3],nn.text[1].lines[4],nn.text[1].lines[5]);
+    text("Laws", 400, 700)
+inside(data.text[1].lines[1],data.text[1].lines[2],data.text[1].lines[3],data.text[1].lines[4],data.text[1].lines[5]);
         }
 
      if (val == 3){
 
        textSize(40)
        fill(0,0,0)
-       text("Arguments in Favor", 100, 600)
+       text("Arguments in Favor", 400, 700)
 
-       inside(nn.text[2].lines[1],nn.text[2].lines[2],nn.text[2].lines[3],nn.text[2].lines[4],nn.text[2].lines[5]);
+       inside(data.text[2].lines[1],data.text[2].lines[2],data.text[2].lines[3],data.text[2].lines[4],data.text[2].lines[5]);
 
       }
 
        if (val == 4){
-         inside(nn.text[3].lines[1],nn.text[3].lines[2],nn.text[3].lines[3],nn.text[3].lines[4],nn.text[3].lines[5]);
+
+         textSize(40)
+         fill(0,0,0)
+         text("Examples of Net Neutrality", 400, 700)
+         inside(data.text[3].lines[1],data.text[3].lines[2],data.text[3].lines[3],data.text[3].lines[4],data.text[3].lines[5]);
 
           }
 
      if (val == 5){
-       inside(nn.text[4].lines[1],nn.text[4].lines[2],nn.text[4].lines[3],nn.text[4].lines[4],nn.text[4].lines[5]);
+       textSize(40)
+       fill(0,0,0)
+       text("Companies in favor of Net Neutrality", 400, 700)
+       inside(data.text[4].lines[1],data.text[4].lines[2],data.text[4].lines[3],data.text[4].lines[4],data.text[4].lines[5]);
 
         }
     if (val == 6){
-      inside(nn.text[5].lines[1],nn.text[5].lines[2],nn.text[5].lines[3],nn.text[5].lines[4],nn.text[5].lines[5]);
+      textSize(40)
+      fill(0,0,0)
+      text("Arguments in Favor", 400, 700)
+      inside(data.text[5].lines[1],data.text[5].lines[2],data.text[5].lines[3],data.text[5].lines[4],data.text[5].lines[5]);
 
       }
     if (val == 7){
@@ -162,26 +173,26 @@ inside(nn.text[1].lines[1],nn.text[1].lines[2],nn.text[1].lines[3],nn.text[1].li
 
       }
       if (val == 9) {
-        inside2(nn.text[6].lines[1],nn.text[6].lines[2],nn.text[6].lines[3],nn.text[6].lines[4],nn.text[6].lines[5]);
+        inside2(data.text[6].lines[1],data.text[6].lines[2],data.text[6].lines[3],data.text[6].lines[4],data.text[6].lines[5]);
 
         }
 
          if (val == 10){
-           inside2(nn.text[7].lines[1],nn.text[7].lines[2],nn.text[7].lines[3],nn.text[7].lines[4],nn.text[7].lines[5]);
+           inside2(data.text[7].lines[1],data.text[7].lines[2],data.text[7].lines[3],data.text[7].lines[4],data.text[7].lines[5]);
 
             }
 
            if (val == 11){
-             inside2(nn.text[8].lines[1],nn.text[8].lines[2],nn.text[8].lines[3],nn.text[8].lines[4],nn.text[8].lines[5]);
+             inside2(data.text[8].lines[1],data.text[8].lines[2],data.text[8].lines[3],data.text[8].lines[4],data.text[8].lines[5]);
 
               }
 
          if (val == 12){
-           inside2(nn.text[9].lines[1],nn.text[9].lines[2],nn.text[9].lines[3],nn.text[9].lines[4],nn.text[9].lines[5]);
+           inside2(data.text[9].lines[1],data.text[9].lines[2],data.text[9].lines[3],data.text[9].lines[4],data.text[9].lines[5]);
 
              }
         if (val == 13){
-          inside2(nn.text[10].lines[1],nn.text[10].lines[2],nn.text[10].lines[3],nn.text[10].lines[4],nn.text[10].lines[5]);
+          inside2(data.text[10].lines[1],data.text[10].lines[2],data.text[10].lines[3],data.text[10].lines[4],data.text[10].lines[5]);
 
             }
         if (val == 14){
