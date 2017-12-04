@@ -18,7 +18,7 @@ function preload() {
   img4 = loadImage("world.png");
   img5 = loadImage("chart-of-the-day-tech-companies-spending-on-lobbying-dec-2010.jpg");
   img6 = loadImage("techpact.jpg");
-  img7 = loadImage("netneutrality.png");
+  img7 = loadImage("net_neutrality.jpg");
   img8 = loadImage("ajit-pai-free-speech.jpg");
   img9 = loadImage("wlTZnST.jpg");
 }
